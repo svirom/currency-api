@@ -1,0 +1,15 @@
+.error-message {
+  display: none;
+  color: red;
+}
+.error-message.error {
+  display: block;
+}
+.form-group p {
+  padding-left: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.form-group p span:first-child {
+  text-decoration: underline;
+}

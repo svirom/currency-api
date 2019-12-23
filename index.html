@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency API</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="app.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="text-center">Курси обміну української гривні</h1>
+  <div class="currency-form container pt-4">
+    <form>
+      <div class="row justify-content-center">
+        <div class="form-group col-md-3">
+          <label for="exampleInputEmail1">Виберіть валюту</label>
+          <select type="email" class="form-control" id="currSelect" aria-describedby="emailHelp" placeholder="Enter email">
+            <option value=''>Виберіть валюту</option>
+          </select>
+          <small id="error-currency" class="error-message">Будь-ласка, виберіть валюту</small>
+        </div>
+        <div class="form-group col-md-3">
+          <div class="row">
+            <div class="col-6"><p><span>Валюта:</span></p></div>
+            <div class="col-6"><p><span id="currName"></span></p></div>
+            <div class="w-100"></div>
+            <div class="col-6"><p><span>Курс:</span></p></div>
+            <div class="col-6"><p><span id="currValue"></span></p></div>
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="form-group col-md-3">
+          <label for="exampleInputPassword1">Виберіть дату</label>
+          <input type="date" class="form-control" id="currDate" placeholder="Select a date">
+          <small id="error-date" class="error-message">Будь ласка, виберіть коректну дату</small>
+        </div>
+        <div class="form-group col-md-3"></div>
+        <div class="w-100"></div>
+        <button type="submit" class="btn btn-primary mt-4" id="currSubmit">Підтвердити</button>
+      </div>
+    </form>
+  </div>
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
